@@ -78,6 +78,30 @@ h1 > span {
 ;
 }
 
+.figure-main {
+	display: flex;
+	align-items: baseline;
+	justify-content: left;
+	width: 100%;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+.figure-main button {
+	border: none;
+	background: none;
+	width: 60px;
+	display: flex;
+	cursor: pointer;
+	font-family: work Sans;
+}
+
+.figure-main i {
+	margin-right: 10px;
+	color: #110808;
+}
+
+
 h2{
 	font-family: 'Syne';
 	font-weight: 700;
@@ -125,6 +149,41 @@ li:hover {
 	text-align: center;
 	margin-bottom: 1em;
 }
+
+.btn-filter {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+	margin-top: 30px;
+}
+
+.btn-filter button {
+	margin-right: 10px;
+	background-color: #fff;
+	color: #1D6154;
+	font-family: syne, sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	font-style: normal;
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 37px;
+	border-radius: 60px;
+	cursor: pointer;
+	border: 1px solid #1D6154;
+	transition: all ease-in-out 0.2s;
+}
+
+.btn-filter button:hover {
+	background-color: #1D6154;
+	color: #ffff;
+}
+
+.selected:active {
+	background-color: #1D6154;
+	color: #ffff;
+}
+
 .gallery {
 	width: 100%;
 	display: grid;
@@ -178,6 +237,12 @@ input[type="submit"]{
 	width: 180px;
 	text-align: center;
 	border-radius: 60px ;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover{
+	background-color: #1d6154ce;
 }
 
 footer nav ul {
